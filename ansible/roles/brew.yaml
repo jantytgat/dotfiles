@@ -11,7 +11,7 @@
 
   - name: iTerm2
     community.general.homebrew_cask:
-      name: iterm
+      name: iterm2
       state: present
 
   - name: Firefox
