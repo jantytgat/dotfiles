@@ -1,0 +1,10 @@
+---
+- name: Install brew packages
+  hosts: macos
+  
+
+  tasks:
+  - name: Install iterm2
+    homebrew:
+      name: iterm
+      state: present
