@@ -4,9 +4,19 @@
   
 
   tasks:
-  - name: Development languages
+  - name: Development Languages
     community.general.homebrew:
       name: golang,dotnet,antlr
+      state: present
+
+  - name: Development IDE
+    community.general.homebrew_cask:
+      name: datagrip,goland,rider,visual-studio-code
+      state: present
+
+  - name: Development Tools
+    community.general.homebrew_cask:
+      name: postman,wireshark
       state: present
 
   - name: iTerm2
@@ -44,40 +54,40 @@
   #     name: dotnet
   #     state: present
 
-  - name: JetBrains Toolbox
-    community.general.homebrew_cask:
-      name: jetbrains-toolbox
-      state: present
+  # - name: JetBrains Toolbox
+  #   community.general.homebrew_cask:
+  #     name: jetbrains-toolbox
+  #     state: present
 
   - name: AnyDesk
     community.general.homebrew_cask:
       name: anydesk
       state: present
 
-  - name: Postman
-    community.general.homebrew_cask:
-      name: postman
-      state: present
+  # - name: Postman
+  #   community.general.homebrew_cask:
+  #     name: postman
+  #     state: present
 
-  - name: Wireshark
-    community.general.homebrew_cask:
-      name: wireshark
-      state: present
+  # - name: Wireshark
+  #   community.general.homebrew_cask:
+  #     name: wireshark
+  #     state: present
 
-  - name: Goland
-    community.general.homebrew_cask:
-      name: goland
-      state: present
+  # - name: Goland
+  #   community.general.homebrew_cask:
+  #     name: goland
+  #     state: present
 
-  - name: Rider
-    community.general.homebrew_cask:
-      name: rider
-      state: present
+  # - name: Rider
+  #   community.general.homebrew_cask:
+  #     name: rider
+  #     state: present
 
-  - name: Visual Studio Code
-    community.general.homebrew_cask:
-      name: visual-studio-code
-      state: present
+  # - name: Visual Studio Code
+  #   community.general.homebrew_cask:
+  #     name: visual-studio-code
+  #     state: present
 
   # - name: Antlr4
   #   community.general.homebrew:
