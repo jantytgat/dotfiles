@@ -1,4 +1,4 @@
-- name: Datagrip IDE
+- name: Antlr SDK
   community.general.homebrew:
     name: antlr
     state: present
