@@ -5,10 +5,18 @@
     clone: yes
     depth: 1
 
+- name: Find Powerlevel10k Fonts
+  ansible.builtin.find:
+    paths: "{{ role_path }}/files/oh-my-zsh/powerlevel10k-fonts"
+    recurse: no
+    patterns: "*.ttf"
+  register: powerlevel10k_fonts
+
 - name: Copy Powerlevel10k Fonts
   ansible.builtin.copy:
-    src: "{{ role_path }}/files/oh-my-zsh/powerlevel10k-fonts/*"
+    src: "{{ item.path }}"
     dest: ~/Library/Fonts
+    with_items: "{{ powerlevel10k_fonts.files }}"
     when: ansible_facts['os_family'] == "Darwin"
 
 - name: Link Powerlevel10k configuration file to user profile

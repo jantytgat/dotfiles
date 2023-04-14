@@ -4,7 +4,7 @@ function baseInstall() {
 }
 
 function runPlaybook() {
-	cd ansible
+	cd ~/dotfiles/ansible
 	ansible-playbook -i inventory macos.yaml
 }
 
