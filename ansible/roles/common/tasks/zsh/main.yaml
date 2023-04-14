@@ -4,7 +4,11 @@
     dest: ~/.zprofile
     state: link
 
-- import_tasks: direnv/main.yaml
-- import_tasks: fuzzyfinder/main.yaml
-- import_tasks: oh-my-zsh/oh-my-zsh.yaml
-- import_tasks: oh-my-zsh/powerlevel10k.yaml
+- name: direnv
+  import_tasks: direnv/main.yaml
+- name: fuzzyfinder
+  import_tasks: fuzzyfinder/main.yaml
+- name: oh-my-zsh
+  import_tasks: oh-my-zsh/oh-my-zsh.yaml
+- name: powerlevel10k
+  import_tasks: oh-my-zsh/powerlevel10k.yaml
