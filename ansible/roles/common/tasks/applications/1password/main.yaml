@@ -1,6 +1,6 @@
 - name: Install 1password from homebrew
   community.general.homebrew_cask:
-    name: {{ item }}
+    name: "{{ item }}"
     state: present
   with_items:
     - 1password
