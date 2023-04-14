@@ -1,0 +1,4 @@
+- name: Datagrip IDE
+  community.general.homebrew_cask:
+    name: datagrip,jetbrains-toolbox
+    state: present

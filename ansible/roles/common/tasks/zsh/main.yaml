@@ -3,3 +3,8 @@
     src: "{{ role_path }}/files/zsh/zprofile"
     dest: ~/.zprofile
     state: link
+
+- import_tasks: direnv/main.yaml
+- import_tasks: fuzzyfinder/main.yaml
+- import_tasks: oh-my-zsh/oh-my-zsh.yaml
+- import_tasks: oh-my-zsh/powerlevel10k.yaml

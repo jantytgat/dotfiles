@@ -1,0 +1,20 @@
+- name: Install fuzzyfinder from homebrew
+  community.general.homebrew:
+    name: fzf
+    state: present
+
+- name: Enable bindings for fuzzyfinder
+  ansible.builtin.command:
+    cmd: (brew --prefix)/opt/fzf/install
+
+- name: Link fuzzyfinder bash configuration to user profile
+  ansible.builtin.file:
+    src: "{{ role_path }}/files/zsh/fuzzyfinder/fzf.bash"
+    dest: ~/.fzf.bash
+    state: link
+
+- name: Link fuzzyfinder zsh configuration to user profile
+  ansible.builtin.file:
+    src: "{{ role_path }}/files/zsh/fuzzyfinder/fzf.zsh"
+    dest: ~/.fzf.zsh
+    state: link

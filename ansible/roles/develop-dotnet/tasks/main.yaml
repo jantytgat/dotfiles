@@ -1,0 +1,9 @@
+- name: Install Go from homebrew
+  community.general.homebrew:
+    name: dotnet
+    state: present
+    
+- name: Dotnet IDE
+  community.general.homebrew_cask:
+    name: rider,jetbrains-toolbox
+    state: present

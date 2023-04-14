@@ -2,4 +2,10 @@
 - hosts: macos
   roles:
     - role: common
+    - role: develop
+    - role: develop-antlr
+    - role: develop-database
+    - role: develop-dotnet
+    - role: develop-go
+    
 

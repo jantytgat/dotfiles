@@ -7,7 +7,7 @@
 
 - name: Find Powerlevel10k Fonts
   ansible.builtin.find:
-    paths: "{{ role_path }}/files/oh-my-zsh/powerlevel10k-fonts"
+    paths: "{{ role_path }}/files/zsh/oh-my-zsh/powerlevel10k-fonts"
     recurse: no
     patterns: "*.ttf"
   register: powerlevel10k_fonts
@@ -16,17 +16,18 @@
   ansible.builtin.copy:
     src: "{{ item.path }}"
     dest: ~/Library/Fonts
-    with_items: "{{ powerlevel10k_fonts.files }}"
-    when: ansible_facts['os_family'] == "Darwin"
+  with_items: "{{ powerlevel10k_fonts.files }}"
+  when: ansible_facts['os_family'] == "Darwin"
 
 - name: Link Powerlevel10k configuration file to user profile
   ansible.builtin.file:
-    src: "{{ role_path }}/files/oh-my-zsh/p10k.zsh"
+    src: "{{ role_path }}/files/zsh/oh-my-zsh/p10k.zsh"
     dest: ~/.p10k.zsh
     state: link
 
 - name: Link zshrc configuration file to user profile
   ansible.builtin.file:
-    src: "{{ role_path }}/files/oh-my-zsh/zshrc"
+    src: "{{ role_path }}/files/zsh/oh-my-zsh/zshrc"
     dest: ~/.zshrc
     state: link
+    force: true

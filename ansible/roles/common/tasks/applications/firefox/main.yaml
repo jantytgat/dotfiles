@@ -1,0 +1,4 @@
+- name: Install Firefox from homebrew
+  community.general.homebrew_cask:
+    name: firefox
+    state: present

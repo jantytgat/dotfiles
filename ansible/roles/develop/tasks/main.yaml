@@ -1,0 +1,5 @@
+- name: Install direnv from homebrew
+  community.general.homebrew_cask:
+      name: postman,wireshark
+      state: present
+    

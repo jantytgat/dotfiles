@@ -1,3 +1,6 @@
+# Configure shells and command-line tools
 - import_tasks: tasks/zsh/main.yaml
-- import_tasks: tasks/oh-my-zsh/oh-my-zsh.yaml
-- import_tasks: tasks/oh-my-zsh/powerlevel10k.yaml
+- import_tasks: tasks/bash/main.yaml
+
+# Install common applications
+- import_tasks: tasks/applications/main.yaml
