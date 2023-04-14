@@ -6,3 +6,32 @@
     type: bool
     value: true
     state: present
+
+
+# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L124
+- name: Show status bar
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: ShowStatusBar
+    type: bool
+    value: true
+    state: present
+
+
+# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L130
+- name: Display full POSIX path as Finder window title
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: _FXShowPosixPathInTitle
+    type: bool
+    value: true
+    state: present
+
+# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L158
+- name: Show status bar
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: FXPreferredViewStyle
+    type: string
+    value: clmv
+    state: present
