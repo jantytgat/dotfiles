@@ -1,0 +1,26 @@
+# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L82
+- name: "Set a blazingly fast keyboard repeat rate, and make it happen more quickly. 1/2"
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: InitialKeyRepeat
+    type: int
+    value: 20
+    state: present
+
+# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L82
+- name: "Set a blazingly fast keyboard repeat rate, and make it happen more quickly. 2/2"
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: KeyRepeat
+    type: int
+    value: 1
+    state: present
+
+# # https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L87
+- name: "Disable auto-correct"
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticSpellingCorrectionEnabled
+    type: bool
+    value: false
+    state: present

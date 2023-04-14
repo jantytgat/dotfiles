@@ -4,3 +4,6 @@
 
 # Install common applications
 - import_tasks: tasks/applications/main.yaml
+
+# Configure macOS
+- import_tasks: tasks/osx/main.yaml
