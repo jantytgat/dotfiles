@@ -17,4 +17,8 @@ cd ~
 git clone https://github.com/jantytgat/dotfiles.git
 ```
 
-Finally, run the bootstrap.sh script
+Finally, run the Makefile:
+```
+cd dotfiles
+make bootstrap
+```

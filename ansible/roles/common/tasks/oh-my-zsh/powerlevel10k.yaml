@@ -1,0 +1,24 @@
+- name: Install Powerlevel10k for oh-my-zsh
+  ansible.builtin.git:
+    repo: https://github.com/romkatv/powerlevel10k.git
+    dest: ~/.oh-my-zsh/custom/themes/powerlevel10k
+    clone: yes
+    depth: 1
+
+- name: Copy Powerlevel10k Fonts
+  ansible.builtin.copy:
+    src: "{{ role_path }}/files/oh-my-zsh/powerlevel10k-fonts/*"
+    dest: ~/Library/Fonts
+    when: ansible_facts['os_family'] == "Darwin"
+
+- name: Link Powerlevel10k configuration file to user profile
+  ansible.builtin.file:
+    src: "{{ role_path }}/files/oh-my-zsh/p10k.zsh"
+    dest: ~/.p10k.zsh
+    state: link
+
+- name: Link zshrc configuration file to user profile
+  ansible.builtin.file:
+    src: "{{ role_path }}/files/oh-my-zsh/zshrc"
+    dest: ~/.zshrc
+    state: link

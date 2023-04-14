@@ -1,0 +1,5 @@
+- name: Link zshrc configuration file to user profile
+  ansible.builtin.file:
+    src: "{{ role_path }}/files/zsh/zprofile"
+    dest: ~/.zprofile
+    state: link

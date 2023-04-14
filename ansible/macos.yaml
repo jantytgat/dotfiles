@@ -1,0 +1,5 @@
+---
+- hosts: macos
+  roles:
+    - role: '/roles/common/zsh.yaml'
+

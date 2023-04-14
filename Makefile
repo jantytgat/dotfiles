@@ -1,2 +1,3 @@
 bootstrap:
-	source scripts/bootstrap.sh
+	sh scripts/bootstrap.sh
+	

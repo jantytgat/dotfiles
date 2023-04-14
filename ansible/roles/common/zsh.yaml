@@ -1,0 +1,8 @@
+- name: Configure zprofile
+  import_tasks: tasks/zsh/main.yaml
+  
+- name: Install oh-my-zsh
+  import_tasks: tasks/oh-my-zsh/oh-my-zsh.yaml
+
+- name: Install powerlevel10k for oh-my-zsh
+  import_tasks: tasks/oh-my-zsh/powerlevel10k.yaml
