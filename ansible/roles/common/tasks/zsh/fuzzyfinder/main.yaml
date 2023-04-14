@@ -5,7 +5,7 @@
 
 - name: Enable bindings for fuzzyfinder
   ansible.builtin.command:
-    cmd: (brew --prefix)/opt/fzf/install
+    cmd: $(brew --prefix)/opt/fzf/install
 
 - name: Link fuzzyfinder bash configuration to user profile
   ansible.builtin.file:
