@@ -1,3 +1,4 @@
-- import_tasks: iterm2/main.yaml
-- import_tasks: 1password/main.yaml
-- import_tasks: visual-studio-code/main.yaml
+- import_tasks: "{{ role_path }}/tasks/applications/1password/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/applications/firefox/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/applications/iterm2/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/applications/visual-studio-code/main.yaml"
