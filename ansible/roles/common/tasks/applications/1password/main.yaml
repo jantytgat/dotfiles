@@ -5,3 +5,5 @@
   with_items:
     - 1password
     - 1password-cli
+  when: ansible_facts['os_family'] == "Darwin"
+

@@ -1,4 +1,4 @@
-- name: Install Go from homebrew
+- name: Install dotnet from homebrew
   community.general.homebrew:
     name: dotnet
     state: present

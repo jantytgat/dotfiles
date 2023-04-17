@@ -7,3 +7,4 @@
 
 # Configure macOS
 - import_tasks: tasks/osx/main.yaml
+  when: ansible_facts['os_family'] == "Darwin"
