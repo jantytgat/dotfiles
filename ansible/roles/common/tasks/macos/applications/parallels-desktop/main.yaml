@@ -1,0 +1,5 @@
+- name: Install Parallels Desktop and Toolbox from homebrew
+  community.general.homebrew_cask:
+    name: parallels,parallels-toolbox
+    state: present
+

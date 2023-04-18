@@ -1,0 +1,4 @@
+- name: Install Camtasia from homebrew
+  community.general.homebrew_cask:
+    name: camtasia
+    state: present
