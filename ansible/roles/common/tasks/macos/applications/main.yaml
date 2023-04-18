@@ -19,7 +19,7 @@
 - import_tasks: "{{ role_path }}/tasks/macos/applications/grammarly/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/istatmenus/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/iterm2/main.yaml"
-- import_tasks: "{{ role_path }}/tasks/macos/applications/parallels-desktop/main.yaml"
+# - import_tasks: "{{ role_path }}/tasks/macos/applications/parallels-desktop/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/snagit/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/vlc/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/wireguard/main.yaml"
