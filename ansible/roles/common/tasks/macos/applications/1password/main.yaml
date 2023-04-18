@@ -5,3 +5,10 @@
   with_items:
     - 1password
     - 1password-cli
+
+- name: Link ssh configuration file to user profile
+  ansible.builtin.file:
+    src: "{{ role_path }}/files/ssh/config"
+    dest: ~/.ssh/config
+    state: link
+    force: true
