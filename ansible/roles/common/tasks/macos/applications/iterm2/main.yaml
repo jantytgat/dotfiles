@@ -10,8 +10,9 @@
     patterns: "*.json"
   register: iterm2_profiles
 
+# Destination path should end with / if the destination does not exist and must be created
 - name: Copy iTerm2 profiles
   ansible.builtin.copy:
     src: "{{ item.path }}"
-    dest: ~/.config/iterm2/AppSupport/DynamicProfiles
+    dest: ~/.config/iterm2/AppSupport/DynamicProfiles/
   with_items: "{{ iterm2_profiles.files }}"
