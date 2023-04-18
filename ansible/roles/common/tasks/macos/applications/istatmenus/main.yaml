@@ -1,0 +1,4 @@
+- name: Install iStat Menus for Mac App Store
+  community.general.mas:
+    id: 1319778037
+    state: present

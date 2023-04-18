@@ -1,0 +1,31 @@
+- name: Install mas from homebrew
+  community.general.homebrew:
+    name: mas
+    state: present
+
+
+- import_tasks: "{{ role_path }}/tasks/macos/applications/1password/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/bettersnaptool/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/firefox/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/istatmenus/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/iterm2/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/vlc/main.yaml"
+
+- import_tasks: "{{ role_path }}/tasks/macos/applications/apple-garageband/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/apple-imovie/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/apple-keynote/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/apple-numbers/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/apple-pages/main.yaml"
+
+- import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-excel/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-outlook/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-powerpoint/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-remote-desktop/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-word/main.yaml"
+
+- import_tasks: "{{ role_path }}/tasks/macos/applications/signal/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/slack/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/telegram/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/whatsapp/main.yaml"
+
+- import_tasks: "{{ role_path }}/tasks/macos/applications/visual-studio-code/main.yaml"

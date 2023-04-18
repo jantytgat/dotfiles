@@ -1,0 +1,10 @@
+- import_tasks: "{{ role_path }}/tasks/macos/development/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/dialogs/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/dock/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/finder/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/keyboard/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/printers/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/safari/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/screenshots/main.yaml"
+
+- import_tasks: "{{ role_path }}/tasks/macos/applications/main.yaml"

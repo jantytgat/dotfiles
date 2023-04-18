@@ -1,0 +1,5 @@
+- name: Uninstall Apple Pages from Mac App Store
+  community.general.mas:
+    id: 409201541
+    state: absent
+  become: true

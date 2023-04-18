@@ -1,0 +1,4 @@
+- name: Install Microsoft PowerPoint from Mac App Store
+  community.general.mas:
+    id: 462062816
+    state: present

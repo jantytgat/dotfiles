@@ -1,0 +1,35 @@
+# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L207
+- name: Enable the Develop menu and the Web Inspector in Safari
+  community.general.osx_defaults:
+    domain: com.apple.Safari
+    key: IncludeDevelopMenu
+    type: bool
+    value: true
+    state: present
+
+# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L207
+- name: Enable the Develop menu and the Web Inspector in Safari
+  community.general.osx_defaults:
+    domain: com.apple.Safari
+    key: WebKitDeveloperExtrasEnabledPreferenceKey
+    type: bool
+    value: true
+    state: present
+
+# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L207
+- name: Enable the Develop menu and the Web Inspector in Safari
+  community.general.osx_defaults:
+    domain: com.apple.Safari
+    key: com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled
+    type: bool
+    value: true
+    state: present
+
+# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L212
+- name: Enable the Develop menu and the Web Inspector in Safari
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: WebKitDeveloperExtras
+    type: bool
+    value: true
+    state: present

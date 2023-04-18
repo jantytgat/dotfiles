@@ -1,0 +1,14 @@
+- name: Install Apple Configurator from Mac App Store
+  community.general.mas:
+    id: 1037126344
+    state: present
+
+- name: Install Transporter from Mac App Store
+  community.general.mas:
+    id: 1450874784
+    state: present
+
+- name: Install Xcode from Mac App Store
+  community.general.mas:
+    id: 497799835
+    state: present

@@ -1,4 +1,4 @@
-- name: Install direnv from homebrew
+- name: Install Postman and Wireshark from homebrew
   community.general.homebrew_cask:
       name: postman,wireshark
       state: present

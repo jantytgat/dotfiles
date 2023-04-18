@@ -1,0 +1,4 @@
+- name: Install Microsoft Excel from Mac App Store
+  community.general.mas:
+    id: 462058435
+    state: present

@@ -1,0 +1,4 @@
+- name: Install Microsoft Word from Mac App Store
+  community.general.mas:
+    id: 462054704
+    state: present

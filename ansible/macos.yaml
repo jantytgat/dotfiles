@@ -4,6 +4,7 @@
     - role: common
     - role: develop
     - role: develop-antlr
+    - role: develop-apple
     - role: develop-database
     - role: develop-dotnet
     - role: develop-go

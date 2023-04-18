@@ -1,0 +1,4 @@
+- name: Install Slack from Mac App Store
+  community.general.mas:
+    id: 803453959
+    state: present

@@ -1,0 +1,5 @@
+- name: Uninstall Apple GarageBand from Mac App Store
+  community.general.mas:
+    id: 682658836
+    state: absent
+  become: true

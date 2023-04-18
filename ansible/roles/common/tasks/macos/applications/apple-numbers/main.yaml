@@ -1,0 +1,5 @@
+- name: Uninstall Apple Numbers from Mac App Store
+  community.general.mas:
+    id: 409203825
+    state: absent
+  become: true

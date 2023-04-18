@@ -3,7 +3,7 @@
     name: golang
     state: present
     
-- name: Go IDE
+- name: Goland IDE
   community.general.homebrew_cask:
     name: goland,jetbrains-toolbox
     state: present

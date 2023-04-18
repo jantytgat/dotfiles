@@ -2,9 +2,9 @@
 - import_tasks: tasks/zsh/main.yaml
 - import_tasks: tasks/bash/main.yaml
 
-# Install common applications
-- import_tasks: tasks/applications/main.yaml
+# # Install common applications
+# - import_tasks: tasks/applications/main.yaml
 
 # Configure macOS
-- import_tasks: tasks/osx/main.yaml
+- import_tasks: tasks/macos/main.yaml
   when: ansible_facts['os_family'] == "Darwin"

@@ -1,0 +1,5 @@
+- name: Uninstall Apple iMovie from Mac App Store
+  community.general.mas:
+    id: 408981434
+    state: absent
+  become: true

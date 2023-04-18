@@ -1,0 +1,17 @@
+- name: Install iTerm2 from homebrew
+  community.general.homebrew_cask:
+    name: iterm2
+    state: present
+
+- name: Find iTerm2 profiles
+  ansible.builtin.find:
+    paths: "{{ role_path }}/files/iterm2"
+    recurse: no
+    patterns: "*.json"
+  register: iterm2_profiles
+
+- name: Copy iTerm2 profiles
+  ansible.builtin.copy:
+    src: "{{ item.path }}"
+    dest: ~/.config/iterm2/AppSupport/DynamicProfiles
+  with_items: "{{ iterm2_profiles.files }}"

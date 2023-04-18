@@ -1,0 +1,4 @@
+- name: Install WireGuard from Mac App Store
+  community.general.mas:
+    id: 1451685025
+    state: present

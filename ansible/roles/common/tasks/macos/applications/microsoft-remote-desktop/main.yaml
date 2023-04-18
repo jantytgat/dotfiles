@@ -1,0 +1,4 @@
+- name: Install Microsoft Remote Desktop from Mac App Store
+  community.general.mas:
+    id: 1295203466
+    state: present

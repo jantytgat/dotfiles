@@ -1,0 +1,26 @@
+- name: Install Visual Studio Code from homebrew
+  community.general.homebrew_cask:
+    name: visual-studio-code
+    state: present
+
+- name: Install Visual Studio Code extensions
+  ansible.builtin.shell:
+    cmd: code --install-extension {{ item }}
+  with_items:
+    - github.remotehub
+    - golang.go
+    - hashicorp.hcl
+    - hashicorp.terraform
+    - mike-lischke.vscode-antlr4
+    - ms-azuretools.vscode-docker
+    - ms-kubernetes-tools.vscode-kubernetes-tools
+    - ms-vscode-remote.vscode-remote-extensionpack
+    - ms-vscode-remote.remote-ssh
+    - ms-vscode-remote.remote-ssh-edit
+    - ms-vscode-remote.remote-containers
+    - ms-vscode.makefile-tools
+    - ms-vscode.remote-explorer
+    - ms-vscode.remote-repositories
+    - ms-vscode.remote-server
+    - redhat.vscode-yaml
+    - timdenholm.netscaler

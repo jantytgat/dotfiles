@@ -1,0 +1,17 @@
+# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L56
+- name: "Disable smart quotes as they're annoying when typing code"
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticQuoteSubstitutionEnabled
+    type: bool
+    value: false
+    state: present
+
+# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L59
+- name: "Disable smart dashes as they're annoying when typing code"
+  community.general.osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticDashSubstitutionEnabled
+    type: bool
+    value: false
+    state: present

@@ -3,7 +3,7 @@
     name: dotnet
     state: present
     
-- name: Dotnet IDE
+- name: Rider IDE
   community.general.homebrew_cask:
     name: rider,jetbrains-toolbox
     state: present
