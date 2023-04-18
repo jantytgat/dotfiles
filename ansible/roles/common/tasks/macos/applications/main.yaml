@@ -28,6 +28,7 @@
 - import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-outlook/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-powerpoint/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-remote-desktop/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-teams/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-word/main.yaml"
 
 # Install communication apps
