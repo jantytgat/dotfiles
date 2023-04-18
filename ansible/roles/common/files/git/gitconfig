@@ -7,4 +7,4 @@
 	name = Jan Tytgat
 	email = jan.tytgat@corelayer.eu
 [core]
-	editor = code
+	editor = code --wait
