@@ -5,7 +5,7 @@ function baseInstall() {
 
 function runPlaybook() {
 	cd ~/dotfiles/ansible
-	ansible-playbook -i inventory macos.yaml
+	ansible-playbook -i inventory -K macos.yaml
 }
 
 cd "$(dirname "${BASH_SOURCE}")";

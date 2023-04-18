@@ -1,0 +1,13 @@
+- name: Link git configuration file to user profile
+  ansible.builtin.file:
+    src: "{{ role_path }}/files/git/gitconfig"
+    dest: ~/.gitconfig
+    state: link
+    force: true
+
+- name: Link gitignore file to user profile
+  ansible.builtin.file:
+    src: "{{ role_path }}/files/git/gitignore"
+    dest: ~/.gitignore
+    state: link
+    force: true

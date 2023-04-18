@@ -1,3 +1,4 @@
+- import_tasks: "{{ role_path }}/tasks/macos/appstoer/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/development/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/dialogs/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/dock/main.yaml"

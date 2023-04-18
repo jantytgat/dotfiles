@@ -2,6 +2,9 @@
 - import_tasks: tasks/zsh/main.yaml
 - import_tasks: tasks/bash/main.yaml
 
+# Configure git
+- import_tasks: tasks/git/main.yaml
+
 # # Install common applications
 # - import_tasks: tasks/applications/main.yaml
 

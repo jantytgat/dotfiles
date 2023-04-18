@@ -1,0 +1,44 @@
+# https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L753
+- name: Enable the automatic update check
+  community.general.osx_defaults:
+    domain: com.apple.SoftwareUpdate
+    key: AutomaticCheckEnabled
+    type: bool
+    value: true
+    state: present
+
+# https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L756
+- name: Check for software updates daily, not just once per week
+  community.general.osx_defaults:
+    domain: com.apple.SoftwareUpdate
+    key: ScheduleFrequency
+    type: int
+    value: 1
+    state: present
+
+# https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L759
+- name: Download newly available updates in the background
+  community.general.osx_defaults:
+    domain: com.apple.SoftwareUpdate
+    key: AutomaticDownload
+    type: int
+    value: 1
+    state: present
+
+# https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L763
+- name: Install system data files @ security updates
+  community.general.osx_defaults:
+    domain: com.apple.SoftwareUpdate
+    key: CriticalUpdateInstall
+    type: int
+    value: 1
+    state: present
+
+# https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L768
+- name: Turn on app auto-update
+  community.general.osx_defaults:
+    domain: com.apple.commerce
+    key: AutoUpdate
+    type: bool
+    value: true
+    state: present
