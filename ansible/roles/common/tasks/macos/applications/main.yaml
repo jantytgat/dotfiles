@@ -32,10 +32,12 @@
 - import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-word/main.yaml"
 
 # Install communication apps
+- import_tasks: "{{ role_path }}/tasks/macos/applications/discord/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/signal/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/slack/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/telegram/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/whatsapp/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/zoom/main.yaml"
 
 # Install and configure Visual Studio Code
 - import_tasks: "{{ role_path }}/tasks/macos/applications/visual-studio-code/main.yaml"
