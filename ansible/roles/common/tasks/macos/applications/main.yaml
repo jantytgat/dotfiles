@@ -31,6 +31,9 @@
 - import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-teams/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/microsoft-word/main.yaml"
 
+# Install Synology Drive
+- import_tasks: "{{ role_path }}/tasks/macos/applications/synology-drive/main.yaml"
+
 # Install communication apps
 - import_tasks: "{{ role_path }}/tasks/macos/applications/discord/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/signal/main.yaml"
