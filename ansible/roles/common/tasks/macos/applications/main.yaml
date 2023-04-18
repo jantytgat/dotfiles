@@ -9,6 +9,7 @@
 - import_tasks: "{{ role_path }}/tasks/macos/applications/firefox/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/istatmenus/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/iterm2/main.yaml"
+- import_tasks: "{{ role_path }}/tasks/macos/applications/snagit/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/vlc/main.yaml"
 
 - import_tasks: "{{ role_path }}/tasks/macos/applications/apple-garageband/main.yaml"

@@ -1,0 +1,4 @@
+- name: Install Snagit from homebrew
+  community.general.homebrew_cask:
+    name: snagit
+    state: present
