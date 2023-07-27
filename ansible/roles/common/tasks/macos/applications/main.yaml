@@ -11,6 +11,7 @@
 - import_tasks: "{{ role_path }}/tasks/macos/applications/apple-pages/main.yaml"
 
 # Install default applications
+- import_tasks: "{{ role_path }}/tasks/macos/applications/apple-remotedesktop/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/1password/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/bettersnaptool/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/camtasia/main.yaml"
