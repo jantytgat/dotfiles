@@ -1,72 +1,72 @@
-# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L207
-- name: Enable the Develop menu and the Web Inspector in Safari
-  community.general.osx_defaults:
-    domain: com.apple.Safari
-    key: IncludeDevelopMenu
-    type: bool
-    value: true
-    state: present
+# # https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L207
+# - name: Enable the Develop menu and the Web Inspector in Safari
+#   community.general.osx_defaults:
+#     domain: com.apple.Safari
+#     key: IncludeDevelopMenu
+#     type: bool
+#     value: true
+#     state: present
 
-# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L207
-- name: Enable the Develop menu and the Web Inspector in Safari
-  community.general.osx_defaults:
-    domain: com.apple.Safari
-    key: WebKitDeveloperExtrasEnabledPreferenceKey
-    type: bool
-    value: true
-    state: present
+# # https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L207
+# - name: Enable the Develop menu and the Web Inspector in Safari
+#   community.general.osx_defaults:
+#     domain: com.apple.Safari
+#     key: WebKitDeveloperExtrasEnabledPreferenceKey
+#     type: bool
+#     value: true
+#     state: present
 
-# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L207
-- name: Enable the Develop menu and the Web Inspector in Safari
-  community.general.osx_defaults:
-    domain: com.apple.Safari
-    key: com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled
-    type: bool
-    value: true
-    state: present
+# # https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L207
+# - name: Enable the Develop menu and the Web Inspector in Safari
+#   community.general.osx_defaults:
+#     domain: com.apple.Safari
+#     key: com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled
+#     type: bool
+#     value: true
+#     state: present
 
-# https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L212
-- name: Add a context menu item for showing the Web Inspector in web views
-  community.general.osx_defaults:
-    domain: NSGlobalDomain
-    key: WebKitDeveloperExtras
-    type: bool
-    value: true
-    state: present
+# # https://github.com/geerlingguy/dotfiles/blob/988e3dccfdab3c901d18350871454d9ea8bbcf2c/.osx#L212
+# - name: Add a context menu item for showing the Web Inspector in web views
+#   community.general.osx_defaults:
+#     domain: NSGlobalDomain
+#     key: WebKitDeveloperExtras
+#     type: bool
+#     value: true
+#     state: present
 
-# https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L468
-# Note: this still hides the URL scheme
-- name: Show the full URL in the address bar
-  community.general.osx_defaults:
-    domain: com.apple.Safari
-    key: ShowFullURLInSmartSearchField
-    type: bool
-    value: true
-    state: present
+# # https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L468
+# # Note: this still hides the URL scheme
+# - name: Show the full URL in the address bar
+#   community.general.osx_defaults:
+#     domain: com.apple.Safari
+#     key: ShowFullURLInSmartSearchField
+#     type: bool
+#     value: true
+#     state: present
 
-# https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L474
-- name: Prevent Safari from opening safe files automatically after downloading
-  community.general.osx_defaults:
-    domain: com.apple.Safari
-    key: AutoOpenSafeDownloads
-    type: bool
-    value: false
-    state: present
+# # https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L474
+# - name: Prevent Safari from opening safe files automatically after downloading
+#   community.general.osx_defaults:
+#     domain: com.apple.Safari
+#     key: AutoOpenSafeDownloads
+#     type: bool
+#     value: false
+#     state: present
 
-# https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L490
-- name: Enable Debug Menu
-  community.general.osx_defaults:
-    domain: com.apple.Safari
-    key: IncludeInternalDebugMenu
-    type: bool
-    value: true
-    state: present
+# # https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L490
+# - name: Enable Debug Menu
+#   community.general.osx_defaults:
+#     domain: com.apple.Safari
+#     key: IncludeInternalDebugMenu
+#     type: bool
+#     value: true
+#     state: present
 
-# https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L542
-- name: Update extensions automatically
-  community.general.osx_defaults:
-    domain: com.apple.Safari
-    key: InstallExtensionUpdatesAutomatically
-    type: bool
-    value: true
-    state: present
+# # https://github.com/mathiasbynens/dotfiles/blob/c886e139233320e29fd882960ba3dd388d57afd7/.macos#L542
+# - name: Update extensions automatically
+#   community.general.osx_defaults:
+#     domain: com.apple.Safari
+#     key: InstallExtensionUpdatesAutomatically
+#     type: bool
+#     value: true
+#     state: present
