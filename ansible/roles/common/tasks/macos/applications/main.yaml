@@ -16,7 +16,7 @@
 - import_tasks: "{{ role_path }}/tasks/macos/applications/bettersnaptool/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/camtasia/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/firefox/main.yaml"
-- import_tasks: "{{ role_path }}/tasks/macos/applications/forticlient-vpn/main.yaml"
+#- import_tasks: "{{ role_path }}/tasks/macos/applications/forticlient-vpn/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/grammarly/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/istatmenus/main.yaml"
 - import_tasks: "{{ role_path }}/tasks/macos/applications/iterm2/main.yaml"
