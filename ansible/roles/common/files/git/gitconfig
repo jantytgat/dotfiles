@@ -8,3 +8,17 @@
 	email = jan.tytgat@corelayer.eu
 [core]
 	editor = code --wait
+
+
+[user]
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBVqvn7PWS2+HNJfCj02z+sL6Tpa6olS5rwmyykGwGcx
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
+
